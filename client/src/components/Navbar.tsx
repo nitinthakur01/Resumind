@@ -22,8 +22,8 @@ const Navbar = () => {
       </Link>
 
       <div className="hidden md:flex items-center gap-8 text-sm text-white/50">
-        <Link to={"/analyse"} className="hover:text-white transition-colors">
-          Analyse
+        <Link to={"/analyze"} className="hover:text-white transition-colors">
+          ResumeAnalyzer
         </Link>
         <Link to={"/jobmatcher"} className="hover:text-white transition-colors">
           JobMatcher
@@ -83,8 +83,8 @@ const Navbar = () => {
 
       {open && (
         <div className="absolute top-full inset-x-0 bg-[#080b14]/95 backdrop-blur-xl border-b border-white/6 flex flex-col gap-4 px-6 py-6 md:hidden">
-          <Link to={"/analyse"} className="hover:text-white transition-colors">
-            Analyse
+          <Link to={"/analyze"} className="hover:text-white transition-colors">
+            ResumeAnalyzer
           </Link>
           <Link
             to={"/jobmatcher"}

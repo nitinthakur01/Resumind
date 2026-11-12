@@ -8,6 +8,7 @@ import Loader from "./components/Loader";
 import { useAppData } from "./contexts/AppContexts";
 import PublicRoutes from "./components/PublicRoutes";
 import ProtectedRoutes from "./components/ProtectedRoutes";
+import Analyze from "./pages/Analyze";
 
 const App = () => {
   const { loading } = useAppData();
@@ -26,6 +27,7 @@ const App = () => {
         </Route>
         <Route element={<ProtectedRoutes />}>
           <Route path="/account" element={<Account />} />
+          <Route path="/analyze" element={<Analyze />} />
         </Route>
       </Routes>
       <Footer />
